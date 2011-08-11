@@ -29,7 +29,10 @@
 			<type>lutece-plugin</type>
 		</dependency>
 	</dependencies>
-
+	<properties>
+		<jiraProjectName>MODULETESTRELEASE</jiraProjectName>
+		<jiraComponentId>10574</jiraComponentId>
+	</properties>
     <scm>
         <connection>scm:svn:http://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/testrelease/module-testrelease</connection>
         <developerConnection>scm:svn:https://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/testrelease/module-testrelease</developerConnection>
