@@ -9,7 +9,7 @@
 	<groupId>fr.paris.lutece.plugins</groupId>
 	<artifactId>module-testrelease</artifactId>
 	<packaging>lutece-plugin</packaging>
-	<version>0.0.54</version>
+	<version>0.0.55-SNAPSHOT</version>
 	<name>Lutece testrelease module</name>
 	
 	<repositories>
@@ -34,8 +34,8 @@
 		<jiraComponentId>10574</jiraComponentId>
 	</properties>
     <scm>
-        <connection>scm:svn:http://dev.lutece.paris.fr/svn/lutece/portal/tags/module-testrelease-0.0.54</connection>
-        <developerConnection>scm:svn:https://dev.lutece.paris.fr/svn/lutece/portal/tags/module-testrelease-0.0.54</developerConnection>
-        <url>http://dev.lutece.paris.fr/viewvc/lutece/portal/tags/module-testrelease-0.0.54</url>
+        <connection>scm:svn:http://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/testrelease/module-testrelease</connection>
+        <developerConnection>scm:svn:https://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/testrelease/module-testrelease</developerConnection>
+        <url>http://dev.lutece.paris.fr/viewvc/lutece/portal/trunk/plugins/testrelease/module-testrelease</url>
     </scm>
 </project>
