@@ -4,7 +4,7 @@
 		<groupId>fr.paris.lutece.plugins</groupId>
 		<version>3.7</version>
 	</parent>
-	
+
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>fr.paris.lutece.plugins</groupId>
 	<artifactId>module-testrelease</artifactId>
@@ -29,7 +29,31 @@
 			<type>lutece-plugin</type>
 		</dependency>
 	</dependencies>
+	
+	<build>
+	
+  <plugins>
+    <plugin>
+      <groupId>com.github.github</groupId>
+      <artifactId>site-maven-plugin</artifactId>
+      <version>0.9</version>
+      <configuration>
+        <message>Creating site for ${project.version}</message>
+      </configuration>
+      <executions>
+        <execution>
+          <goals>
+            <goal>site</goal>
+          </goals>
+          <phase>site</phase>
+        </execution>
+      </executions>
+    </plugin>
+  </plugins>
+</build>
+
 	<properties>
+		<github.global.server>github</github.global.server>
 		<jiraProjectName>MODULETESTRELEASE</jiraProjectName>
 		<jiraComponentId>10574</jiraComponentId>
 	</properties>
