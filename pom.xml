@@ -53,7 +53,7 @@
 </build>
 
 	<properties>
-		<github.global.server>github</github.global.server>
+		<github.global.server>github.com</github.global.server>
 		<jiraProjectName>MODULETESTRELEASE</jiraProjectName>
 		<jiraComponentId>10574</jiraComponentId>
 	</properties>
