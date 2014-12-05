@@ -34,8 +34,8 @@
 		<jiraComponentId>10574</jiraComponentId>
 	</properties>
     <scm>
-        <connection>scm:svn:http://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/testrelease/module-testrelease</connection>
-        <developerConnection>scm:svn:https://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/testrelease/module-testrelease</developerConnection>
-        <url>http://dev.lutece.paris.fr/viewvc/lutece/portal/trunk/plugins/testrelease/module-testrelease</url>
+        <connection>scm:git:https://github.com/lutece-platform/lutece-build-module-testrelease.git</connection>
+        <developerConnection>scm:git:https://github.com/lutece-platform/lutece-build-module-testrelease.git</developerConnection>
+        <url>https://github.com/lutece-platform/lutece-build-module-testrelease.git</url>
     </scm>
 </project>
