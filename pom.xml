@@ -49,22 +49,6 @@
         </execution>
       </executions>
     </plugin>
-  </plugins>
-</build>
-
-	<properties>
-		<github.global.server>github.com</github.global.server>
-		<jiraProjectName>MODULETESTRELEASE</jiraProjectName>
-		<jiraComponentId>10574</jiraComponentId>
-	</properties>
-    <scm>
-        <connection>scm:git:https://github.com/lutece-platform/lutece-build-module-testrelease.git</connection>
-        <developerConnection>scm:git:https://github.com/lutece-platform/lutece-build-module-testrelease.git</developerConnection>
-        <url>https://github.com/lutece-platform/lutece-build-module-testrelease.git</url>
-    <tag>HEAD</tag>
-  </scm>
-  <build>
-  <plugins>
     <plugin>
       <artifactId>maven-release-plugin</artifactId>
       <version>2.5</version>
@@ -81,7 +65,20 @@
         </dependency>
       </dependencies>
     </plugin>
+
   </plugins>
-  </build>
+</build>
+
+	<properties>
+		<github.global.server>github.com</github.global.server>
+		<jiraProjectName>MODULETESTRELEASE</jiraProjectName>
+		<jiraComponentId>10574</jiraComponentId>
+	</properties>
+    <scm>
+        <connection>scm:git:https://github.com/lutece-platform/lutece-build-module-testrelease.git</connection>
+        <developerConnection>scm:git:https://github.com/lutece-platform/lutece-build-module-testrelease.git</developerConnection>
+        <url>https://github.com/lutece-platform/lutece-build-module-testrelease.git</url>
+    <tag>HEAD</tag>
+  </scm>
 
 </project>
