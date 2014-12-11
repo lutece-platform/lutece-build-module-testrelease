@@ -63,4 +63,25 @@
         <url>https://github.com/lutece-platform/lutece-build-module-testrelease.git</url>
     <tag>HEAD</tag>
   </scm>
+  <build>
+  <plugins>
+    <plugin>
+      <artifactId>maven-release-plugin</artifactId>
+      <version>2.5</version>
+      <configuration>
+        <providerImplementations>
+          <git>jgit</git>
+        </providerImplementations>
+      </configuration>
+      <dependencies>
+        <dependency>
+          <groupId>org.apache.maven.scm</groupId>
+          <artifactId>maven-scm-provider-jgit</artifactId>
+          <version>1.9.1</version>
+        </dependency>
+      </dependencies>
+    </plugin>
+  </plugins>
+  </build>
+
 </project>
