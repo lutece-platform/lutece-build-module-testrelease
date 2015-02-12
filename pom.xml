@@ -11,7 +11,10 @@
 	<packaging>lutece-plugin</packaging>
 	<version>0.1.9-SNAPSHOT</version>
 	<name>Lutece testrelease module</name>
-	
+<<<hjskhdkjhsdjq
+>>>
+<test>
+</test>	
 	<repositories>
 		<repository>
 			<id>lutece</id>
