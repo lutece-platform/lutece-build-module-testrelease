@@ -29,7 +29,6 @@
 		</dependency>
 	</dependencies>
 	
-<test>hihi
 	<build>
 	
 	  <plugins>
