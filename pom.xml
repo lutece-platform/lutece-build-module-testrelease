@@ -9,7 +9,7 @@
 	<groupId>fr.paris.lutece.plugins</groupId>
 	<artifactId>module-testrelease</artifactId>
 	<packaging>lutece-plugin</packaging>
-	<version>0.1.10</version>
+	<version>0.1.10-SNAPSHOT</version>
 	<name>Lutece testrelease module</name>
 	<repositories>
 		<repository>
