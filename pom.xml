@@ -1,8 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<parent>
-		<artifactId>lutece-plugins-pom</artifactId>
-		<groupId>fr.paris.lutece.plugins</groupId>
-		<version>3.7</version>
+		<artifactId>lutece-global-pom</artifactId>
+		<groupId>fr.paris.lutece.tools</groupId>
+		<version>7.0.8</version>
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
@@ -22,35 +22,19 @@
 	
 	<dependencies>
 		<dependency>
+			<groupId>fr.paris.lutece</groupId>
+			<artifactId>lutece-core</artifactId>
+			<version>7.1.9</version>
+			<type>lutece-core</type>
+		</dependency>
+		<dependency>
 			<groupId>fr.paris.lutece.plugins</groupId>
 			<artifactId>plugin-testrelease</artifactId>
-			<version>[0.0.1,2.9.9)</version>
+			<version>3.0.4</version>
 			<type>lutece-plugin</type>
 		</dependency>
 	</dependencies>
 	
-	<build>
-	
-	  <plugins>
-	    <plugin>
-	      <artifactId>maven-release-plugin</artifactId>
-	      <version>2.5.1</version>
-	      <configuration>
-		<providerImplementations>
-		  <git>jgit</git>
-		</providerImplementations>
-	      </configuration>
-	      <dependencies>
-		<dependency>
-		  <groupId>org.apache.maven.scm</groupId>
-		  <artifactId>maven-scm-provider-jgit</artifactId>
-		  <version>1.9.2</version>
-		</dependency>
-	      </dependencies>
-	    </plugin>
-	  </plugins>
-	</build>
-
 	<properties>
 		<github.global.server>github.com</github.global.server>
 		<jiraProjectName>MODULETESTRELEASE</jiraProjectName>
