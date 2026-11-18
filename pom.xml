@@ -1,60 +1,42 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<parent>
-		<artifactId>lutece-plugins-pom</artifactId>
-		<groupId>fr.paris.lutece.plugins</groupId>
-		<version>3.7</version>
+		<artifactId>lutece-global-pom</artifactId>
+		<groupId>fr.paris.lutece.tools</groupId>
+		<version>8.0.3</version>
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>fr.paris.lutece.plugins</groupId>
 	<artifactId>module-testrelease</artifactId>
 	<packaging>lutece-plugin</packaging>
-	<version>0.1.11</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<name>Lutece testrelease module</name>
 	<repositories>
 		<repository>
 			<id>lutece</id>
 			<name>luteceRepository</name>
-			<url>http://dev.lutece.paris.fr/maven_repository</url>
+			<url>https://dev.lutece.paris.fr/maven_repository</url>
 			<layout>default</layout>
 		</repository>
 	</repositories>
 	
 	<dependencies>
 		<dependency>
+			<groupId>fr.paris.lutece</groupId>
+			<artifactId>lutece-core</artifactId>
+			<version>[8.0.0,)</version>
+			<type>lutece-core</type>
+		</dependency>
+		<dependency>
 			<groupId>fr.paris.lutece.plugins</groupId>
 			<artifactId>plugin-testrelease</artifactId>
-			<version>[0.0.1,)</version>
+			<version>8.0.2</version>
 			<type>lutece-plugin</type>
 		</dependency>
 	</dependencies>
 	
-	<build>
-	
-	  <plugins>
-	    <plugin>
-	      <artifactId>maven-release-plugin</artifactId>
-	      <version>2.5.1</version>
-	      <configuration>
-		<providerImplementations>
-		  <git>jgit</git>
-		</providerImplementations>
-	      </configuration>
-	      <dependencies>
-		<dependency>
-		  <groupId>org.apache.maven.scm</groupId>
-		  <artifactId>maven-scm-provider-jgit</artifactId>
-		  <version>1.9.2</version>
-		</dependency>
-	      </dependencies>
-	    </plugin>
-	  </plugins>
-	</build>
-
 	<properties>
 		<github.global.server>github.com</github.global.server>
-		<jiraProjectName>MODULETESTRELEASE</jiraProjectName>
-		<jiraComponentId>10574</jiraComponentId>
 	</properties>
     <scm>
         <connection>scm:git:https://github.com/lutece-platform/lutece-build-module-testrelease.git</connection>
